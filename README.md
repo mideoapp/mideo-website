@@ -1,6 +1,8 @@
 # mideo.app
 
-Landing page for Mideo, an app I for iOS and Android.
+Landing page for [Mideo](https://mideo.app), an app I for iOS and Android.
+
+Check it out here: [Mideo - Capture Videos While Playing Music](https://mideo.app)
 
 App Store for iOS: https://itunes.apple.com/us/app/id1358135284
 
