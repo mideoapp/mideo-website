@@ -599,7 +599,7 @@ nav ul li a {
 
 .journal-block .journal-info img {
     /* width: 100%; */
-  /* max-width: 100%; */
+  max-width: 100%;
   max-height: 300px;
   /* height: 250px; */
   /* margin: 10px; */
