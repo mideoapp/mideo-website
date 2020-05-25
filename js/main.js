@@ -9,6 +9,9 @@ $(document).ready(function() {
   // in order to start with beginning background color for header
   scrollingColors();
 
+  $(".ipad").hide();
+  $(".iphone8").hide();
+
   // ========================================================================= //
   //  //SMOOTH SCROLL
   // ========================================================================= //
@@ -109,7 +112,7 @@ $(document).ready(function() {
       dots: true,
       nav: false,
       responsiveClass: true,
-      responsive: { 0: { items: 1 }, 768: { items: 2 }, 900: { items: 4 } }
+      responsive: { 0: { items: 1 }, 768: { items: 1 }, 900: { items: 2 } }
     });
 
 
@@ -136,69 +139,15 @@ $(document).ready(function() {
 
   function addDescription(type) {
       var text = document.getElementById('portfolio-description');
-
-      if (type === '.all') {
-          // $("#see-more-details").show();
-          text.textContent = '';
-          addAppLink('#', '');
-          hide(false);
-      } else {
-          $("#see-more-details").hide();
-          if (type === '.mealme') {
-              //mealme
-              text.textContent = 'MealMe is the social network for food that integrates restaurant discovery, delivery, and reservations.';
-
-              var websiteLink = 'https://www.mealmeapp.com'
-              var websiteText = 'View Website'
-              var iosLink = 'https://itunes.apple.com/us/app/id1460140965?mt=8'
-              var iosText = 'View on App Store for iOS'
-              var text = document.getElementById('portfolio-app-store');
-              var ios = '<p><a href=\"' + iosLink + '\" target=\"_blank\" class=\"whitelink\">' + iosText + '</a>'
-              var web = '<p><a href=\"' + websiteLink + '\" target=\"_blank\" class=\"whitelink\">' + websiteText + '</a>'
-              text.innerHTML = ios + web
-
-              hide();
-          } else if (type === '.mideo') {
-              //mideo
-              text.textContent = 'Normally, iOS pauses your music whenever you take a video. Mideo gets around this restriction and lets you continue to listen to music while you record.';
-              var androidLink = 'https://play.google.com/store/apps/details?id=io.synople.mideo'
-              var androidText = 'View on Google Play for Android'
-              var iosLink = 'https://itunes.apple.com/us/app/mideo-video-listen-to-music/id1358135284?mt=8'
-              var iosText = 'View on App Store for iOS'
-              var supportLink = 'http://willsaid.com/mideo'
-              var supportText = 'Support Page'
-              var text = document.getElementById('portfolio-app-store');
-              var ios = '<p><a href=\"' + iosLink + '\" target=\"_blank\" class=\"whitelink\">' + iosText + '</a>';
-              var android = '<p><a href=\"' + androidLink + '\" target=\"_blank\" class=\"whitelink\">' + androidText + '</a>';
-              var support = '<p><a href=\"' + supportLink + '\" target=\"_blank\" class=\"whitelink\">' + supportText + '</a>';
-              text.innerHTML = ios + android + support;
-              hide();
-          } else if (type === '.barbell') {
-              //barbell
-              text.textContent = 'Barbell Loader and Calculator is the ultimate app for weightlifters and powerlifters. It loads the bar while calculating conversions, rep maxes, sinclair and wilks coefficients, loadable percentages, and more, along with ample customization.';
-              addAppLink('https://itunes.apple.com/US/app/id1322247393?mt=8')
-              hide();
-          }  else if (type === '.phonics') {
-              //phonics
-              text.textContent = 'Brainy Phonics is an interactive children\'s game that improves childhood literacy rates in an engaging way. I was commissioned to upgrade Brainy Phonics for Dr Walter Evans, Professor Emeritus of English at Augusta University. ';
-              hide(false);
-              addAppLink('https://itunes.apple.com/in/app/brainy-phonics/id1121110521?mt=8');
-          }  else if (type === '.spotify') {
-              // Spotify alarm
-              text.textContent = 'Spotify Music Alarm is exactly what you would expect, the first alarm dedicated to waking you up with Spotify.';
-
-              var iosLink = 'https://itunes.apple.com/us/app/spotify-alarm-clock/id1439527300'
-              var iosText = 'View on App Store for iOS'
-              var supportLink = 'http://willsaid.com/spotify'
-              var supportText = 'Support Page'
-              var text = document.getElementById('portfolio-app-store');
-              var ios = '<p><a href=\"' + iosLink + '\" target=\"_blank\" class=\"whitelink\">' + iosText + '</a>';
-              var support = '<p><a href=\"' + supportLink + '\" target=\"_blank\" class=\"whitelink\">' + supportText + '</a>';
-              text.innerHTML = ios + support;
-
-              hide();
-              // addAppLink('https://itunes.apple.com/us/app/spotify-alarm-clock/id1439527300')
-          }
+      $("#see-more-details").hide();
+      if (type === '.iphonex') {
+          hide();
+          $(".iphone").show();
+          $(".ipad").hide();
+      } else if (type === '.ipad') {
+          hide();
+          $(".ipad").show();
+          $(".iphone").hide();
       }
   }
 
@@ -208,7 +157,7 @@ $(document).ready(function() {
       // text.target = '_blank';
       // text.innerHTML = '<p>' + linkText + '</p>';
 
-      text.innerHTML = '<p><a href=\"' + link + '\" target=\"_blank\" class=\"whitelink\">' + linkText + '</a>'
+      text.innerHTML = '<p><a href=\"' + link + 'class=\"whitelink\">' + linkText + '</a>'
   }
 
   function removeAppLinks() {
@@ -216,11 +165,6 @@ $(document).ready(function() {
   }
 
   function hide(phonics = true) {
-      if (phonics) {
-          $("#phonics-landscape").hide();
-      } else {
-          $("#phonics-landscape").show();
-      }
   }
 
   function scrollingColors() {
