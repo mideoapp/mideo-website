@@ -251,10 +251,6 @@ nav ul li a {
   position: relative;
 }
 
-#header h1 {
-    color: red;
-}
-
 #header .header-content {
   height: 100vh;
   text-align: left;
@@ -266,11 +262,12 @@ nav ul li a {
 
 
 .header-content h1 {
-  font-size: 40px;
-  font-weight: 700;
+  /* font-size: 40px; */
+  /* font-weight: 700; */
+  color: red;
   margin-bottom: 10px;
-  text-transform: uppercase;
-  color: white;
+  /* text-transform: uppercase; */
+  /* color: white; */
 }
 
 .header-content p {
@@ -346,6 +343,11 @@ nav ul li a {
   padding-bottom: 30px;
   /* border: 20px solid #fff; */
   border-radius: 25px;
+}
+
+#about img {
+    margin-top: 20px;
+    border-radius: 10px;
 }
 
 #about .div-img-bg .about-img img {
@@ -597,20 +599,23 @@ nav ul li a {
     max-height: 50px !important;
 } */
 
-.journal-block .journal-info img {
+.journal-block .journal-info p {
     /* width: 100%; */
   max-width: 100%;
   max-height: 300px;
   /* height: 250px; */
-  /* margin: 10px; */
+  /* margin: 100px; */
   border-radius: 25px;
-  /* padding: 10px; */
+
+  padding: 25px;
 
    box-shadow: 10px 10px #ff9502;
    border: 1px solid #ff9502;
    background-color: #f8f8f8;
    object-fit:contain;
 }
+
+
 .journal-info {
     margin: 0 auto;
 
@@ -657,8 +662,9 @@ nav ul li a {
 /*  Footer
 /*-----------------------------------------------------------------------------------*/
 
-#footer h1 {
+#footer h2 {
     color: #ff3b30;
+    margin: 20px;
 }
 
 #footer {
