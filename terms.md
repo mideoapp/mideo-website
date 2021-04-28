@@ -4,7 +4,7 @@ title: Terms of Use
 ---
 These Terms of Use ("Terms") govern your use of the Mideo application (“Mideo” or “Application”) operated by Topanga Technologies, LLC (“Topanga Technologies”, “us”, or “we”).
 
-By accessing and using Mideo, you (“User”) acknowledge that you have read, understood, and agree to be bound by these Terms and the Privacy Policy. If you do not accept these Terms and the Privacy Policy, you are not authorized to use the Services. We may modify these Terms and the Privacy Policy at any time and such modification will be effective upon posting to the Application.
+By accessing and using Mideo, you (“User”) acknowledge that you have read, understood, and agree to be bound by these Terms and the [Privacy Policy](/privacy). If you do not accept these Terms and the Privacy Policy, you are not authorized to use the Services. We may modify these Terms and the Privacy Policy at any time and such modification will be effective upon posting to the Application.
 
 ## Privacy
 Topanga Technologies takes your privacy seriously. For a better experience, and for remote debugging, Mideo may retain information about your device and how you use the app in a cloud database. By using the Application, you agree that Topanga Technologies may collect and use this information as set forth in the Privacy Policy.
